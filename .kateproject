@@ -1,0 +1,4 @@
+{
+  "name": "codewar"
+, "files": [ { "directory": "codewar", "filters": ["*.py"], "recursive": 1 } ]
+}
