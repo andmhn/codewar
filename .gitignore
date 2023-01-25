@@ -1,2 +1,4 @@
 *.o
 *.exe
+bin/
+compile_commands.json
