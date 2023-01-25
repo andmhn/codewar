@@ -3,5 +3,7 @@ CFLAGS=-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c
 
 LDLIBS=-lm # -lcriterion -lncurses
 
-bin/% : %.c
+%.o : %.c
 	$(CC) -c $(CFLAGS)  $< -o $@
+% : %.c
+	$(CC) $(CFLAGS)  $< -o $@.exe $(LDLIBS)
