@@ -6,21 +6,21 @@
 // char* remove_char(const char* src)
 // {
 //
-// 	int len = strlen(src);
-// 	char * ret = malloc(len);
+//  int len = strlen(src);
+//  char * ret = malloc(len);
 //
-// 	for(int i = 0; i < len; i++)
-// 	{
+//  for(int i = 0; i < len; i++)
+//  {
 //     // when reaching end of
-// 		if (i == len - 2)
-// 		{
-// 			ret[i] = '\0';
-// 			break;
-// 		}
-// 		ret[i] = src[i + 1];
-// 	}
+//      if (i == len - 2)
+//      {
+//          ret[i] = '\0';
+//          break;
+//      }
+//      ret[i] = src[i + 1];
+//  }
 //
-// 	return ret;
+//  return ret;
 // }
 
 
@@ -32,10 +32,10 @@ char* remove_char(char* dst, const char* src)
 }
 
 int main(){
-	char * src = "Hello World";
-	char * dst = malloc(strlen(src));
-	char * str = remove_char(dst, src);
+    char * src = "Hello World";
+    char * dst = malloc(strlen(src));
+    char * str = remove_char(dst, src);
 
-	printf("%s\n", str);
-	free(dst);
+    printf("%s\n", str);
+    free(dst);
 }
