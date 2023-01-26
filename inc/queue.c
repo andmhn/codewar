@@ -1,16 +1,5 @@
-#include <stdbool.h>
-#include <stdlib.h>
+#include "queue.h"
 
-typedef struct node {
-    int data;
-    struct node *next;
-} Node;
-
-typedef struct queue {
-    Node *front, *back;
-} Queue;
-
-// Modify the code below to implement the key operations for queues
 void queue_enqueue(Queue *queue, int data) {
     Node *tmp = malloc(sizeof(Node));
     tmp->data = data;
